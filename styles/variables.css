@@ -1,1 +1,27 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --background-image-line-width: 2px;
+  --background-image-grid: var(--background-image-line),
+    transparent var(--background-image-line-width),
+    transparent calc(var(--background-image-line-width) * 2);
+  --background-image: repeating-linear-gradient(
+      to right,
+      var(--background-image-grid)
+    ),
+    repeating-linear-gradient(var(--background-image-grid)),
+    linear-gradient(var(--background-image-gradient));
+  --border: 2px solid var(--accent-color);
+  --lable-color: var(--accent-color);
+  --lable-sroke-color: var(--background-color);
+  --lable-sroke: 1px var(--lable-sroke-color);
+  --card-text-size: 18px;
+  --accent-text-size: 14px;
+  --hover-text-color: var(--background-color);
+  --contour-fill: var(--accent-color);
+  --heart-color: #ff0000;
+  --sparks-fill: var(--heart-color);
+  --sparks-not-liked-opacity: 0;
+  --sparks-liked-opacity: 1;
+  --backdrop-color: #000;
+}

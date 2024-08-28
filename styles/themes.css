@@ -1,6 +1,51 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --main-text-weight: 400;
+  --main-header-weight: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --background-image-line: #d3d3d3, #d3d3d3 var(--background-image-line-width);
+  --background-image-gradient: #e7e7e7 0.01%, #1a1a1a;
+  --button-text-color: var(--background-color);
+  --space-filter-hue-rotate: hue-rotate(0.1turn);
+  --button-svg-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text-weight: 400;
+    --main-header-weight: 700;
+    --background-color: #fff;
+    --accent-color: #000;
+    --background-image-line: #d3d3d3, #d3d3d3 var(--background-image-line-width);
+    --background-image-gradient: #e7e7e7 0.01%, #1a1a1a;
+    --button-text-color: var(--background-color);
+    --space-filter-hue-rotate: hue-rotate(0.1turn);
+    --button-svg-color: var(--background-color);
+  }
+}
+
+:root.theme-dark {
+  --main-text-weight: 465;
+  --main-header-weight: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --background-image-line: #000, #000 var(--background-image-line-width);
+  --background-image-gradient: #007f0c, #004306;
+  --button-text-color: var(--accent-color);
+  --space-filter-hue-rotate: hue-rotate(0.65turn);
+  --button-svg-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-weight: 465;
+    --main-header-weight: 785;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --background-image-line: #000, #000 var(--background-image-line-width);
+    --background-image-gradient: #007f0c, #004306;
+    --button-text-color: var(--accent-color);
+    --space-filter-hue-rotate: hue-rotate(0.65turn);
+    --button-svg-color: var(--accent-color);
+  }
+}
