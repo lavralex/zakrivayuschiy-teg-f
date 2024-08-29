@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Inter-Variable";
-  --accent-font: "PressStart2P";
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P", fantasy, serif;
   --background-image-line-width: 2px;
   --background-image-grid: var(--background-image-line),
     transparent var(--background-image-line-width),
