@@ -260,7 +260,6 @@
   position: absolute;
   z-index: 1;
   display: inline;
-  opacity: 0.5;
   color: var(--lable-color);
   font-family: var(--accent-font);
   font-weight: var(--main-text-weight);
