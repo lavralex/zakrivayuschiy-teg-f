@@ -80,7 +80,7 @@
   display: grid;
   grid-template-rows: min-content min-content min-content;
   margin-block: 100px;
-  padding-block: 120px 24px;
+  padding-block: 120px 27px;
   font-family: var(--accent-font);
 }
 
@@ -448,11 +448,11 @@
 
 @media (min-width: 1440px) {
   .header {
-    padding-block: 135px 27px;
+    padding-block-start: 135px;
   }
 
   .card-lable {
-    inset-block-start: 23.5px;
+    inset-block-start: 25.5px;
   }
 
   .save-button {
